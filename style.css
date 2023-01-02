@@ -138,10 +138,6 @@ main {
     height: 120px;
     padding: 4px 16px;
 }
-.new-post img {
-    width: 60px;
-    height: 60px;
-}
 .details-post {
     display: flex;
     flex-direction: column;
@@ -270,7 +266,7 @@ main {
 .follow {
     background-color: rgb(48, 47, 47);
     border-radius: 20px;
-    max-width: 80%;
+    width: 80%;
     margin: 0 0 20px 10px;
     display: flex;
     flex-direction: column;
@@ -293,7 +289,7 @@ main {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    min-height: 70px;
     margin-top: 8px;
     padding: 30px 15px;
 }
@@ -314,10 +310,10 @@ main {
     header {
         width: 10%;
         padding: 10px 0;
-
     }
     main {
         margin-left: 10%;
+        width: 90%;
     }
     header span {
         display: none;
@@ -325,7 +321,73 @@ main {
     header .tweet-button {
         width: 55px;
         border-radius: 50%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
-
+    .profile {
+       padding-left: 0;
+    }
+    .profile a{
+        flex-direction: column;
+        
+    }
+    .profile i {
+        /* margin-left: 0; */
+        margin-right: 0;
+    }
+    .main-feed {
+        width: 60%;
+    }
+    .side-feed {
+        width: 40%;
+    }
+}
+@media (max-width:967px){
+    .follow {
+        width: 98%;
+    }
+    .info {
+        width: 98%;
+    }
+}
+@media (max-width:785px) {
+    .follow-profile {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .action-post .material-icons {
+        margin-right: 2px;
+    }
+    .details-post {
+        width: 80%;
+    }
+}
+@media (max-width:640px) {
+    .tweet-button {
+        width: 120px;
+    }
+}
+@media (max-width:605px) {
+    .tweet-img {
+        width: 30px;
+        height: 30px;
+    }
+    .details-post {
+        margin-left: 2px;
+    }
+    .general {
+        font-size: 0.8rem;
+    }
+    .main-feed {
+        width: 80%;
+    }
+    .side-feed {
+        width: 20%;
+    }
+    .follow {
+        width: 100%;
+    }
+    .info {
+        width: 100%;
+    }
 }
